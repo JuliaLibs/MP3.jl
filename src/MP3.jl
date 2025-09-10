@@ -35,7 +35,7 @@ function __init__()
 
     # MP3 files with ID3v1 (or no tags) and ID3v2 tags have different headers
     magic = (UInt8[0xff, 0xfb], UInt8[0x49, 0x44, 0x33])
-    add_format(format"MP3", magic, [".mp3"], [:MP3])
+    add_format(format"MP3", magic, [".mp3"], [MP3])
 end
 
 end # module
